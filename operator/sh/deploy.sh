@@ -21,6 +21,7 @@ clean() {
   oc delete crd infinispans.infinispan.org || true
 }
 
+
 # Deploy operator and other components
 deploy() {
   oc apply -f ${REPO_URL}/deploy/rbac.yaml
