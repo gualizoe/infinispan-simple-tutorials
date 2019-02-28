@@ -66,6 +66,8 @@ $ curl -v \
     -H 'Content-type: text/plain' \
     -d 'test-value' \
     example-infinispan-default.router.172.17.0.3.nip.io/rest/default/test-key
+...
+< HTTP/1.1 200 OK
 ```
 
 7. Verify that the test data can be retrieved:
@@ -73,12 +75,15 @@ $ curl -v \
 $ curl -v \
     -u infinispan:infinispan \
     example-infinispan-default.router.172.17.0.3.nip.io/rest/default/test-key
+...
+< HTTP/1.1 200 OK
+...
 test-value
 ```
 
   You've successfully completed this tutorial!
 
-  Resources created by this tutorial can be freed calling:
+  Resources created by this tutorial can be freed up calling:
 
   ```bash
   $ oc delete route example-infinispan
