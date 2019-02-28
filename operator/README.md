@@ -44,6 +44,7 @@ example-infinispan-b58cb5699-92gr9     1/1       Running     0          46m
 example-infinispan-b58cb5699-dtd97     1/1       Running     0          46m
 
 $ oc logs example-infinispan-b58cb5699-727zq
+...
 14:27:34,041 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-2) ISPN000094: Received new cluster view for channel cluster: [example-infinispan-b58cb5699-dtd97|2] (3) [example-infinispan-b58cb5699-dtd97, example-infinispan-b58cb5699-92gr9, example-infinispan-b58cb5699-727zq]
 ```
 
